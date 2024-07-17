@@ -5,11 +5,9 @@ const BlogPostDetails = ({ posts }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const post = posts[id];
-
   if (!post) {
     return <p>Post not found</p>;
   }
-
   return (
     <div className="container blog-post-details">
       <button className="button" onClick={() => navigate(-1)}>
