@@ -1,0 +1,130 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8fa;
+  color: #14171a;
+  line-height: 1.5;
+}
+
+h1, h2, p {
+  margin: 0 0 10px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+.blog-post-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-main-card {
+  display: flex;
+  gap: 20px;
+}
+
+.blog-main-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 8px 0px 0px 8px;
+}
+
+.blog-post-item {
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.blog-post-item:hover {
+  transform: scale(1.03);
+}
+
+.blog-post-item h2 {
+  font-size: 1.5rem;
+  color: #1da1f2;
+  margin-bottom: 10px;
+}
+
+.blog-post-item p {
+  color: #657786;
+}
+
+.blog-post-item .post-date {
+  color: #aab8c2;
+  font-size: 0.9rem;
+}
+
+.blog-post-details {
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.blog-post-details h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.blog-post-details img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.blog-post-details .post-content {
+  font-size: 1.1rem;
+  color: #657786;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  background: #1da1f2;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #0d95e8;
+}
+
+.button:disabled {
+  background: #aab8c2;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .blog-post-item {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-post-item {
+    flex: 1 1 100%;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
